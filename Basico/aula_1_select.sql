@@ -1,7 +1,8 @@
 -- 1-VC seleciona tabelas dentro de tabela
 select
   customer_city,
-  customer_id
+  customer_id,
+  coalesce(franca, 'cidade paulista')
 from tb_customers
 
 -- 2- VC seleciona  todas tabelas dentro da tabela maior
